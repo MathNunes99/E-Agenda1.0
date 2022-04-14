@@ -9,10 +9,10 @@ namespace E_Agenda1._0_ConsoleApp1.ModuloContato
 {
     public class Contato : EntidadeBase
     {
-        private readonly string _nome;
+        public string _nome;
         private readonly string _email;
         private readonly string _telefone;
-        private readonly string _empresa;
+        public string _empresa;
         private readonly string _cargo;
 
         public Contato(string nome, string email, string telefone,string empresa, string cargo)
@@ -35,7 +35,8 @@ namespace E_Agenda1._0_ConsoleApp1.ModuloContato
         }
         public string ToStringBasic()
         {
-            return "Nome: " + _nome + Environment.NewLine +
+            return "Id: " + id + Environment.NewLine +
+                "Nome: " + _nome + Environment.NewLine +
                 "Empresa: " + _empresa + Environment.NewLine +
                 "Cargo: " + _cargo + Environment.NewLine;
         }

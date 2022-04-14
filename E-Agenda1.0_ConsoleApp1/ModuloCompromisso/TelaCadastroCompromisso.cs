@@ -137,6 +137,7 @@ namespace E_Agenda1._0_ConsoleApp1.ModuloCompromisso
             Contato contatoCadastrado = _repositorioContato.RetornarCtt(numeroContato);
             
             contatoNovo = _repositorioContato.SelecionarRegistro(numeroContato);
+
             return new Compromisso(assunto,data,local,inicio,termino, contatoNovo);
         }
 

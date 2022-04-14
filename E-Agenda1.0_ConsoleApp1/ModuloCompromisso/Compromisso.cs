@@ -35,7 +35,12 @@ namespace E_Agenda1._0_ConsoleApp1.ModuloCompromisso
                 "Local: " + _local + Environment.NewLine +
                 "Inicio: " + _inicio + Environment.NewLine +
                 "Termino: " + _termino + Environment.NewLine + 
-                "Dados do Contato: " + _contato + Environment.NewLine;
+                "Dados do Contato: " + ToStringBasicContato() + Environment.NewLine;
+        }
+        public string ToStringBasicContato()
+        {
+            return "Nome: " + _contato._nome + Environment.NewLine +
+                "Empresa: " + _contato._empresa + Environment.NewLine;
         }
     }
 }
